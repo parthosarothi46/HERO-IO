@@ -1,16 +1,49 @@
-# React + Vite
+# HERO IO – Productive Apps Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+HERO IO is a modern app discovery platform that showcases a curated collection of productivity applications. Users can browse apps, view detailed information including ratings and download stats, install apps to their personal list, and manage their installations — all in a clean, responsive interface.
 
-Currently, two official plugins are available:
+## Features
+- 🏠 **Home Page** – Hero banner, stats section, trending apps grid
+- 📱 **All Apps** – Live search, sort by downloads, full app grid
+- 📊 **App Details** – Recharts rating visualization, install with localStorage persistence
+- 💾 **My Installation** – View & uninstall your saved apps, sort by size
+- ❌ **Custom Error Pages** – 404 page + App Not Found state
+- ⚡ **Loading Animations** – Page transitions and search debounce
+- 📱 **Fully Responsive** – Mobile, tablet, and desktop support
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies
+- **React JS** (v19) + **JavaScript**
+- **Tailwind CSS** – Utility-first styling
+- **React Router DOM** (v6) – Client-side routing
+- **Recharts** – Rating bar chart visualization
+- **React Hot Toast** – Toast notifications
+- **LocalStorage** – Persist installed apps across sessions
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── AppCard.jsx
+│   └── LoadingScreen.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Apps.jsx
+│   ├── AppDetails.jsx
+│   ├── Installation.jsx
+│   └── NotFound.jsx
+├── data/
+│   └── data.js
+├── App.jsx
+├── index.css
+└── main.jsx
+```
