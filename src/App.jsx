@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import NotFound from './pages/NotFound';
 import Apps from './pages/Apps';
 import AppDetails from './pages/AppDetails';
+import Installation from './pages/Installation';
 
 
 function AppContent() {
@@ -17,6 +18,7 @@ function AppContent() {
             <Route path="/" element={<Home />} />
             <Route path="/apps" element={<Apps />} />
             <Route path="/apps/:id" element={<AppDetails />} />
+            <Route path="/installation" element={<Installation />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
