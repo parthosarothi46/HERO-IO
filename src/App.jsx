@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import Navbar from './components/Navbar'
 import { BrowserRouter as Router } from 'react-router-dom';
+import Footer from './components/Footer'
 
 
 function AppContent() {
@@ -11,6 +12,7 @@ function AppContent() {
   return (
     <>
       <Navbar />
+      <Footer />
     </>
   );
 }
