@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound';
 import Apps from './pages/Apps';
+import AppDetails from './pages/AppDetails';
 
 
 function AppContent() {
@@ -15,6 +16,7 @@ function AppContent() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/apps" element={<Apps />} />
+            <Route path="/apps/:id" element={<AppDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
