@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound';
+import Apps from './pages/Apps';
 
 
 function AppContent() {
@@ -13,6 +14,7 @@ function AppContent() {
       <main className="min-h-screen">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/apps" element={<Apps />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
