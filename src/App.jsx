@@ -2,14 +2,26 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import Navbar from './components/Navbar'
+import { BrowserRouter as Router } from 'react-router-dom';
+
+
+function AppContent() {
+
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+}
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <Router>
+        <AppContent />
+      </Router>
     </>
   )
 }
